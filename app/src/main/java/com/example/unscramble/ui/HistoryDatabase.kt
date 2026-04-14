@@ -1,8 +1,9 @@
-package com.example.unscramble.data
+package com.example.unscramble.ui
 
 import androidx.room.Database
+import androidx.room.RoomDatabase
 
 @Database(entities = [History::class], version = 1)
-abstract class HistoryDatabase {
+abstract class HistoryDatabase: RoomDatabase() {
     abstract fun HistoryDao(): HistoryDao
 }
